@@ -128,7 +128,8 @@ button {
   height: 100%;
   text-align: left;
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
   background-image: url(./assets/image-hero-portrait.png);
   background-repeat: no-repeat;
   background-size: contain;
