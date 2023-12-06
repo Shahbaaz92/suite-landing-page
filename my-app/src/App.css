@@ -9,6 +9,12 @@
   --Orange: #ffa84e;
 }
 /***General***/
+body,
+html,
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: linear-gradient(
     to bottom,
@@ -17,6 +23,7 @@ body {
     var(--Cream) 75%,
     var(--Cream) 100%
   );
+  color: var(--Grey);
   display: flex;
   justify-content: center;
   font-family: "Epilogue", sans-serif;
@@ -82,33 +89,81 @@ small {
   height: auto;
   margin: 50px auto;
 }
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Main-Container {
+  display: flex;
+  align-items: center;
+  margin-top: 67px;
+  width: 100%;
+  height: 90vh;
+}
+.Hero-Container {
+  width: 73%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/image-hero-portrait.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+.Hero {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+.Hero-about {
+  width: 60%;
+}
+.Stats {
+  width: 27%;
+  height: 100%;
+}
 .Comment {
   width: 100%;
   height: auto;
   background-color: var(--Dark-Blue);
   display: flex;
   justify-content: space-around;
-  /* gap: 30px; */
-
-  /* padding: 88px 121px; */
+  margin-top: 200px;
 }
 .Comment h2,
 .Comment h3,
 .Comment h4,
-.Quote {
+q {
   color: var(--Cream-White);
 }
-.Comment-img {
+.Comment-Img {
   position: relative;
   width: 40%;
 }
-.CMO {
+.CMO-Img {
   position: absolute;
-  left: 0;
+  left: 80px;
   bottom: 0;
 }
-.Quote {
+.Comment-Quote {
   width: 40%;
+  margin: 85px;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.CMO-Details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0;
 }
 .Connect {
   margin-top: 95px;

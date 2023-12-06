@@ -1,6 +1,6 @@
 function Stats() {
   return (
-    <section>
+    <section className="Stats">
       <article>
         <h2>2K+</h2>
         <h4>Companies</h4>

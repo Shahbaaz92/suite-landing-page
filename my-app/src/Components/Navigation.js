@@ -2,9 +2,9 @@ import logo from "../assets/logo.svg";
 
 function Navigation() {
   return (
-    <nav>
+    <nav className="Navigation">
       <img src={logo} alt="suite" />
-      <button>Request Beta Access</button>
+      <button className="Navigation-Btn">Request Beta Access</button>
     </nav>
   );
 }
