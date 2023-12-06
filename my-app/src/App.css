@@ -81,6 +81,15 @@ small {
   font-size: 15px;
   line-height: 32px;
 }
+button {
+  font-family: Epilogue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  border-radius: 6px;
+}
 
 /***App***/
 .App {
@@ -94,15 +103,26 @@ small {
   justify-content: space-between;
   align-items: center;
 }
+.Navigation-Btn {
+  border: 1px solid var(--Dark-Blue);
+  color: var(--Dark-Blue);
+  background-color: none;
+  padding: 12px 24px;
+}
+.Navigation-Btn:hover {
+  background-color: var(--Dark-Blue);
+  color: var(--Cream-White);
+}
 
 .Main-Container {
   display: flex;
   align-items: center;
   margin-top: 67px;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 .Hero-Container {
+  position: relative;
   width: 73%;
   height: 100%;
   text-align: left;
@@ -123,7 +143,26 @@ small {
 .Hero-about {
   width: 60%;
 }
+.Hero-Btn {
+  border: none;
+  background-color: var(--Dark-Blue);
+  color: var(--Cream-White);
+  padding: 14px 32px;
+}
+.Hero-Btn:hover {
+  background: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+}
+.Hero-Curve {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  transform: translate(0, 50%);
+}
 .Stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 27%;
   height: 100%;
 }
@@ -134,6 +173,7 @@ small {
   display: flex;
   justify-content: space-around;
   margin-top: 200px;
+  border-radius: 15px;
 }
 .Comment h2,
 .Comment h3,
@@ -144,15 +184,29 @@ q {
 .Comment-Img {
   position: relative;
   width: 40%;
+  height: auto;
 }
-.CMO-Img {
+.Comment-Blur-Effect {
   position: absolute;
-  left: 80px;
+  bottom: -50px;
+  left: 0;
+}
+.Comment-CMO-Img {
+  position: absolute;
+  right: 0;
   bottom: 0;
 }
+
+.Comment-Curve {
+  position: absolute;
+  right: -90px;
+  top: 160px;
+}
+
 .Comment-Quote {
   width: 40%;
   margin: 85px;
+  margin-left: 150px;
   padding: 10px;
   text-align: left;
   display: flex;
@@ -180,4 +234,10 @@ q {
 .SNS {
   width: 20px;
   height: 20px;
+}
+.SNS:hover {
+  filter: opacity(80%);
+}
+
+@media screen and (max-width: 1000px) {
 }
