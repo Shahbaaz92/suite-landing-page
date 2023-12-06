@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suite-landing-page/static/css/main.09f44fba.css",
+    "main.css": "/suite-landing-page/static/css/main.48713607.css",
     "main.js": "/suite-landing-page/static/js/main.4b0470b4.js",
     "static/js/787.d4aba7ab.chunk.js": "/suite-landing-page/static/js/787.d4aba7ab.chunk.js",
     "static/media/image-hero-portrait.png": "/suite-landing-page/static/media/image-hero-portrait.4dad9378090c290deea2.png",
@@ -14,12 +14,12 @@
     "static/media/pattern-blur.svg": "/suite-landing-page/static/media/pattern-blur.b8e22fd07a55b6f74a4ca317665e73f8.svg",
     "static/media/pattern-curved-line-2.svg": "/suite-landing-page/static/media/pattern-curved-line-2.b3e7a600581015c6814002a2b1b5992d.svg",
     "static/media/pattern-curved-line-1.svg": "/suite-landing-page/static/media/pattern-curved-line-1.737baf08aa1b342f22c34fc8ba6387cb.svg",
-    "main.09f44fba.css.map": "/suite-landing-page/static/css/main.09f44fba.css.map",
+    "main.48713607.css.map": "/suite-landing-page/static/css/main.48713607.css.map",
     "main.4b0470b4.js.map": "/suite-landing-page/static/js/main.4b0470b4.js.map",
     "787.d4aba7ab.chunk.js.map": "/suite-landing-page/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09f44fba.css",
+    "static/css/main.48713607.css",
     "static/js/main.4b0470b4.js"
   ]
 }
