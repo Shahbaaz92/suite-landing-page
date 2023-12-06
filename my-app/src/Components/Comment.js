@@ -1,16 +1,16 @@
-import founderImg from "../assets/image-jeremy-large.png";
+import founderImg from "../assets/image-jeremy-large.webp";
 import curve2 from "../assets/pattern-curved-line-2.svg";
 import blurEffect from "../assets/pattern-blur.svg";
 function Comment() {
   return (
     <section className="Comment">
       <div className="Comment-Img">
+        <img src={founderImg} alt="Suite-CMO" className="Comment-CMO-Img" />
         <img
           src={blurEffect}
           alt="blur effect behind the CMO"
           className="Comment-Blur-Effect"
         />
-        <img src={founderImg} alt="Suite-CMO" className="Comment-CMO-Img" />
         <img
           src={curve2}
           alt="curved line in Comment section"

@@ -94,6 +94,7 @@ button {
 /***App***/
 .App {
   text-align: center;
+  width: 99vw;
   max-width: 1110px;
   height: auto;
   margin: 50px auto;
@@ -156,7 +157,6 @@ button {
   position: absolute;
   top: 0;
   left: 40%;
-  transform: translate(0, 50%);
 }
 .Stats {
   display: flex;
@@ -168,50 +168,45 @@ button {
 }
 .Comment {
   width: 100%;
-  height: auto;
+  height: 540px;
   background-color: var(--Dark-Blue);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 200px;
   border-radius: 15px;
 }
-.Comment h2,
-.Comment h3,
-.Comment h4,
-q {
+.Comment * {
   color: var(--Cream-White);
 }
 .Comment-Img {
+  width: 50%;
   position: relative;
-  width: 40%;
-  height: auto;
-}
-.Comment-Blur-Effect {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
 }
 .Comment-CMO-Img {
   position: absolute;
-  right: 0;
   bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 1;
 }
-
+.Comment-Blur-Effect {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
 .Comment-Curve {
   position: absolute;
-  right: -90px;
-  top: 160px;
+  bottom: 60%;
+  right: 0;
 }
-
 .Comment-Quote {
-  width: 40%;
-  margin: 85px;
-  margin-left: 150px;
-  padding: 10px;
+  width: 50%;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 88px;
 }
 .CMO-Details {
   display: flex;
@@ -240,4 +235,84 @@ q {
 }
 
 @media screen and (max-width: 1000px) {
+  .App {
+    width: 95vw;
+  }
+  .Main-Container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+  }
+  .Hero-Container {
+    width: 100%;
+    height: auto;
+  }
+  .Hero {
+    width: 80%;
+    height: 90vh;
+    justify-content: end;
+  }
+  .Stats {
+    width: 100%;
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 830px) {
+  h1 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -0.778px;
+  }
+  .Comment h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.417px;
+  }
+  h3 {
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.089px;
+  }
+  q {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.09px;
+  }
+  .Comment * {
+    text-align: center;
+  }
+  .Comment {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 275px;
+    height: 684px;
+    gap: 0;
+  }
+  .Comment-Img {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .Comment-CMO-Img {
+    width: 252px;
+    height: 402px;
+    bottom: 150px;
+  }
+  .Comment-Blur-Effect {
+    left: 30%;
+    top: -30%;
+    width: 40%;
+  }
+  .Comment-Quote {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+  }
 }
