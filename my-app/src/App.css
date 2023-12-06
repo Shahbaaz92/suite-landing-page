@@ -1,38 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+:root {
+  --Dark-Blue: #172339;
+  --Grey: #49566d;
+  --Cream: #f3ede7;
+  --Cream-White: #faf8f6;
+  --Purple: #a060ff;
+  --Pink: #cb30e3;
+  --Orange: #ffa84e;
+}
+/***General***/
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--Cream-White) 0%,
+    var(--Cream-White) 75%,
+    var(--Cream) 75%,
+    var(--Cream) 100%
+  );
+  display: flex;
+  justify-content: center;
+  font-family: "Epilogue", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+h1 {
+  color: var(--Dark-Blue);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: -1px;
+}
+h1 span {
+  font-weight: 400;
+}
+h2 {
+  color: var(--Dark-Blue);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+h2 span {
+  font-weight: 400;
+}
+h3 {
+  color: var(--Dark-Blue);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  text-transform: uppercase;
+}
+h4 {
+  color: var(--Grey);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+q {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.1px;
+}
+
+small {
+  color: var(--Grey);
+  font-size: 15px;
+  line-height: 32px;
+}
+
+/***App***/
 .App {
   text-align: center;
+  max-width: 1110px;
+  height: auto;
+  margin: 50px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Comment {
+  width: 100%;
+  height: auto;
+  background-color: var(--Dark-Blue);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  justify-content: space-around;
+  /* gap: 30px; */
 
-.App-link {
-  color: #61dafb;
+  /* padding: 88px 121px; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Comment h2,
+.Comment h3,
+.Comment h4,
+.Quote {
+  color: var(--Cream-White);
+}
+.Comment-img {
+  position: relative;
+  width: 40%;
+}
+.CMO {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.Quote {
+  width: 40%;
+}
+.Connect {
+  margin-top: 95px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Social {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+.SNS {
+  width: 20px;
+  height: 20px;
 }
