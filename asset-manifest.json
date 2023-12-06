@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/suite-landing-page/static/css/main.f855e6bc.css",
+    "main.js": "/suite-landing-page/static/js/main.b12059d9.js",
+    "static/js/787.d4aba7ab.chunk.js": "/suite-landing-page/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/suite-landing-page/index.html",
+    "main.f855e6bc.css.map": "/suite-landing-page/static/css/main.f855e6bc.css.map",
+    "main.b12059d9.js.map": "/suite-landing-page/static/js/main.b12059d9.js.map",
+    "787.d4aba7ab.chunk.js.map": "/suite-landing-page/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b12059d9.js"
+  ]
+}
